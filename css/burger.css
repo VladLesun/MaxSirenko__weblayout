@@ -1,0 +1,157 @@
+.burger {
+  position: relative;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  z-index: 15;
+}
+
+.burger__top,
+.burger__middle,
+.burger__bottom {
+  position: relative;
+  display: block;
+  width: 70%;
+  height: 3px;
+  border-radius: 3px;
+  box-shadow: 0 2px 10px 0 rgba(255, 255, 255, 0.5);
+  background-color: #fff;
+  transition: all 0.3s;
+  /* margin: 0 auto; */
+  margin-left: auto;
+}
+
+.burger__top {
+  margin-bottom: 5px;
+}
+
+.burger__middle {
+  width: 50%;
+}
+
+.burger__bottom {
+  width: 30%;
+  margin-top: 5px;
+}
+
+.is-opened .burger__top {
+  animation: ease 0.7s burger-top-open forwards;
+}
+.burger__top {
+  animation: ease 0.7s burger-top-close forwards;
+}
+
+.is-opened .burger__bottom {
+  animation: ease 0.7s burger-bottom-open forwards;
+}
+.burger__bottom {
+  animation: ease 0.7s burger-bottom-close forwards;
+}
+
+.is-opened .burger__middle {
+  animation: ease 0.7s burger-middle-hidden forwards;
+}
+.burger__middle {
+  animation: ease 0.7s burger-middle-visually forwards;
+}
+
+@media (min-width: 580px) {
+  .burger {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  .burger {
+    display: none;
+  }
+}
+
+@keyframes burger-top-open {
+  0% {
+    top: 0;
+    transform: rotate(0);
+  }
+  50% {
+    top: 8px;
+    transform: rotate(0);
+  }
+  100% {
+    top: 8px;
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes burger-top-close {
+  0% {
+    top: 8px;
+    transform: rotate(45deg);
+  }
+  50% {
+    top: 8px;
+    transform: rotate(0);
+  }
+  100% {
+    top: 0;
+    transform: rotate(0);
+  }
+}
+
+@keyframes burger-bottom-open {
+  0% {
+    bottom: 0;
+    transform: rotate(0);
+  }
+  50% {
+    width: 70%;
+    bottom: 8px;
+    transform: rotate(0);
+  }
+  100% {
+    width: 70%;
+    bottom: 8px;
+    transform: rotate(135deg);
+  }
+}
+
+@keyframes burger-bottom-close {
+  0% {
+    width: 70%;
+    bottom: 8px;
+    transform: rotate(135deg);
+  }
+  50% {
+    width: 70%;
+    bottom: 8px;
+    transform: rotate(0);
+  }
+  100% {
+    bottom: 0;
+    transform: rotate(0);
+  }
+}
+
+@keyframes burger-middle-hidden {
+  50% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes burger-middle-visually {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

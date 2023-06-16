@@ -1,0 +1,49 @@
+.footer__container {
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__title {
+  font-weight: 800;
+  font-size: 22px;
+}
+
+.footer__wrap,
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer__social-item {
+}
+
+.footer__social-link {
+}
+
+.footer__phone-list {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  gap: 5px;
+}
+
+.footer__phone-item {
+}
+
+.footer__phone-link {
+  font-weight: 800;
+  font-size: 20px;
+}

@@ -1,0 +1,120 @@
+.portfolio__title {
+  text-align: center;
+  font-size: 30px;
+}
+
+.portfolio__wrap {
+  padding-top: 10px;
+}
+
+.portfolio__wrap-title {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.portfolio__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.portfolio__item {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  background: transparent url("../img/footerLogo.png") no-repeat center;
+  background-size: 100%;
+  border: 1px solid var(--main-color);
+  cursor: pointer;
+  transition: box-shadow 0.5s ease;
+}
+
+.portfolio__video {
+  position: absolute;
+  background: transparent url("../img/playerIcon.png") no-repeat center;
+  background-size: 20%;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  transition: background-size 0.5s ease;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 580px) {
+  .portfolio__title {
+    font-size: 35px;
+  }
+  .portfolio__wrap {
+    padding-top: 20px;
+  }
+  .portfolio__wrap-title {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .portfolio__list {
+    gap: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .portfolio__title {
+    font-size: 35px;
+  }
+  .portfolio__wrap {
+    padding-top: 20px;
+  }
+  .portfolio__wrap-title {
+    font-size: 30px;
+  }
+  .portfolio__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .portfolio__item {
+    width: calc((100% / 2) - 10px);
+    padding-top: 30%;
+  }
+
+  .portfolio__item:nth-child(1) {
+    width: 100%;
+    padding-top: 46%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .portfolio__title {
+    font-size: 45px;
+  }
+  .portfolio__wrap {
+    padding-top: 25px;
+  }
+  .portfolio__wrap-title {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  .portfolio__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .portfolio__item {
+    padding-top: 25%;
+  }
+  .portfolio__video:hover {
+    background-size: 25%;
+  }
+  .portfolio__item:hover {
+    box-shadow: 0px 0px 20px 10px rgba(255, 255, 255, 1.5);
+  }
+}
