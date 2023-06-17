@@ -106,10 +106,19 @@
           Список вопросов для клиента для понимания ожиданий от ролика и его
           задач
         </p>
-        <form action="" class="brief__form form">
+        <form action="" class="brief__form form" id="add-form">
           <fieldset class="form__wrap">
-            <h2 class="form__title form__main-title">Электронная почта*</h2>
-            <input type="email" class="form__input input-mail" placeholder="Ваш e-mail" />
+            <h2 data-end="*" class="form__title form__main-title">
+              Электронная почта
+            </h2>
+            <div class="form__validation-box">
+              <input
+                data-mail="true"
+                type="email"
+                class="form__input input-mail js-validation"
+                placeholder="Ваш e-mail"
+              />
+            </div>
           </fieldset>
           <fieldset class="form__wrap">
             <h2 class="form__title form__main-title">
@@ -117,12 +126,17 @@
             </h2>
             <ul class="form__list">
               <li class="form__item">
-                <h3 class="form__title">1.1 Название компании*</h3>
-                <input
-                  type="text"
-                  class="form__input"
-                  placeholder="Ваша компания"
-                />
+                <h3 data-end="*" class="form__title">
+                  1.1 Лицо, ответственное за проект
+                </h3>
+                <div class="form__validation-box">
+                  <input
+                    data-name="true"
+                    type="text"
+                    class="form__input js-validation"
+                    placeholder="Ваше имя"
+                  />
+                </div>
               </li>
               <li class="form__item">
                 <h3 class="form__title">
@@ -136,16 +150,26 @@
                 />
               </li>
               <li class="form__item">
-                <h3 class="form__title">1.3 Лицо, ответственное за проект</h3>
-                <input type="text" class="form__input" placeholder="Ваше имя" />
+                <h3 data-end="*" class="form__title">1.3 Название компании</h3>
+                <div class="form__validation-box">
+                  <input
+                    data-company="true"
+                    type="text"
+                    class="form__input js-validation"
+                    placeholder="Ваша компания"
+                  />
+                </div>
               </li>
               <li class="form__item">
-                <h3 class="form__title">1.4 Контактный телефон*</h3>
-                <input
-                  type="text"
-                  class="form__input"
-                  placeholder="Ваш телефон"
-                />
+                <h3 data-end="*" class="form__title">1.4 Контактный телефон</h3>
+                <div class="form__validation-box">
+                  <input
+                    data-tel="true"
+                    type="text"
+                    class="form__input js-validation"
+                    placeholder="Ваш телефон"
+                  />
+                </div>
               </li>
             </ul>
           </fieldset>
@@ -155,20 +179,26 @@
             </h2>
             <ul class="form__list">
               <li class="form__item">
-                <h3 class="form__title">2.1 Ваш продукт*</h3>
-                <textarea
-                  type="text"
-                  class="form__textarea"
-                  placeholder="Краткое описание рекламируемого продукта, его суть, свойства, уникальные элементы."
-                ></textarea>
+                <h3 data-end="*" class="form__title">2.1 Ваш продукт</h3>
+                <div class="form__validation-box">
+                  <textarea
+                    data-product="true"
+                    type="text"
+                    class="form__textarea js-validation"
+                    placeholder="Краткое описание рекламируемого продукта, его суть, свойства, уникальные элементы."
+                  ></textarea>
+                </div>
               </li>
               <li class="form__item">
-                <h3 class="form__title">2.2 Целевая аудитория*</h3>
-                <textarea
-                  type="text"
-                  class="form__textarea"
-                  placeholder="Пол, возраст, модель поведения аудитории на Вашем сегменте рынка, реакция на Ваш или похожий продукт, другие особенности предполагаемого зрителя или покупателя."
-                ></textarea>
+                <h3 data-end="*" class="form__title">2.2 Целевая аудитория</h3>
+                <div class="form__validation-box">
+                  <textarea
+                    data-target-group="true"
+                    type="text"
+                    class="form__textarea js-validation"
+                    placeholder="Пол, возраст, модель поведения аудитории на Вашем сегменте рынка, реакция на Ваш или похожий продукт, другие особенности предполагаемого зрителя или покупателя."
+                  ></textarea>
+                </div>
               </li>
             </ul>
           </fieldset>
@@ -176,14 +206,17 @@
             <h2 class="form__title form__main-title">3. Описание задачи</h2>
             <ul class="form__list">
               <li class="form__item">
-                <h3 class="form__title">
-                  3.1 Какую задачу должен выполнять видеоролик?*
+                <h3 data-end="*" class="form__title">
+                  3.1 Какую задачу должен выполнять видеоролик?
                 </h3>
-                <textarea
-                  type="text"
-                  class="form__textarea"
-                  placeholder="Привлечение новых клиентов, рассказать о рекламной компании, привлечь сотрудников, создать имидж и т.д."
-                ></textarea>
+                <div class="form__validation-box">
+                  <textarea
+                    data-task="true"
+                    type="text"
+                    class="form__textarea js-validation"
+                    placeholder="Привлечение новых клиентов, рассказать о рекламной компании, привлечь сотрудников, создать имидж и т.д."
+                  ></textarea>
+                </div>
               </li>
               <li class="form__item">
                 <h3 class="form__title">3.2 Концепт</h3>
@@ -202,12 +235,17 @@
                 ></textarea>
               </li>
               <li class="form__item">
-                <h3 class="form__title">3.4 Размещение видеоролика*</h3>
-                <textarea
-                  type="text"
-                  class="form__textarea"
-                  placeholder="Диджитал площадки (Youtube, Instagram, TikTok, сайт), внутреннее использования, наружная реклама, либо ТВ."
-                ></textarea>
+                <h3 data-end="*" class="form__title">
+                  3.4 Размещение видеоролика
+                </h3>
+                <div class="form__validation-box">
+                  <textarea
+                    data-video-hosting="true"
+                    type="text"
+                    class="form__textarea js-validation"
+                    placeholder="Диджитал площадки (Youtube, Instagram, TikTok, сайт), внутреннее использования, наружная реклама, либо ТВ."
+                  ></textarea>
+                </div>
               </li>
             </ul>
           </fieldset>
@@ -217,18 +255,27 @@
             </h2>
             <ul class="form__list">
               <li class="form__item">
-                <h3 class="form__title">4.1 Бюджет*</h3>
-                <input
-                  type="text"
-                  class="form__input"
-                  placeholder="Ваша компания"
-                />
+                <h3 data-end="*" class="form__title">4.1 Бюджет</h3>
+                <div class="form__validation-box">
+                  <input
+                    data-budget="true"
+                    type="text"
+                    class="form__input js-validation"
+                    placeholder="Ваша компания"
+                  />
+                </div>
               </li>
               <li class="form__item">
-                <h3 class="form__title">
-                  4.2 Дедлайн(Желаемые сроки сдачи ролика)*
+                <h3 data-end="*" class="form__title">
+                  4.2 Дедлайн(Желаемые сроки сдачи роика)
                 </h3>
-                <input type="date" class="form__input" />
+                <div class="form__validation-box">
+                  <input
+                    data-deadline="true"
+                    type="date"
+                    class="form__input js-validation"
+                  />
+                </div>
               </li>
               <li class="form__item">
                 <h3 class="form__title">4.3 Дополнительная информация</h3>
@@ -241,9 +288,7 @@
             </ul>
           </fieldset>
 
-          <button class="form__submit" id="form-submit" type="submit">
-            Отправить форму
-          </button>
+          <button class="form__submit" type="submit">Отправить форму</button>
         </form>
       </section>
     </main>
