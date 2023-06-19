@@ -56,8 +56,18 @@
     />
 
     <link rel="stylesheet" href="./css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
 
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"
+      defer
+    ></script>
+    <!-- <script src="./js/modules/swiper.min.js" defer></script> -->
+    <script src="./js/modules/swiper.js" defer></script>
     <script type="module" src="./js/main.js" defer></script>
   </head>
   <body>
@@ -102,6 +112,83 @@
     </header>
 
     <main class="main">
+      <section class="hero">
+        <div class="container hero__container">
+          <div class="hero-slider">
+            <div class="swiper hero-slider__main slider-main">
+              <div class="swiper-wrapper slider-main__wrapper">
+                <div class="slider-main__slide swiper-slide">
+                  <div
+                    data-video="https://www.youtube.com/embed/JZQzAWzSsn4"
+                    class="swiper-slide__video"
+                  ></div>
+                </div>
+                <div class="slider-main__slide swiper-slide">
+                  <div
+                    data-video="https://www.youtube.com/embed/SVMivCZagZM"
+                    class="swiper-slide__video"
+                  ></div>
+                </div>
+                <div class="slider-main__slide swiper-slide">
+                  <div
+                    data-video="https://www.youtube.com/embed/mlBIpwtNxxE"
+                    class="swiper-slide__video"
+                  ></div>
+                </div>
+                <div class="slider-main__slide swiper-slide">
+                  <div
+                    data-video="https://www.youtube.com/embed/WokJWYVJUmw"
+                    class="swiper-slide__video"
+                  ></div>
+                </div>
+                <div class="slider-main__slide swiper-slide">
+                  <div
+                    data-video="https://www.youtube.com/embed/DURvbAK1cAY"
+                    class="swiper-slide__video"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="hero-slider__nav slider-nav">
+              <div class="slider-nav__item item-focus" tabindex="0">
+                <img
+                  class="slider-nav__img"
+                  src="./img/forVideo/1.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="slider-nav__item" tabindex="0">
+                <img
+                  class="slider-nav__img"
+                  src="./img/forVideo/2.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="slider-nav__item" tabindex="0">
+                <img
+                  class="slider-nav__img"
+                  src="./img/forVideo/3.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="slider-nav__item" tabindex="0">
+                <img
+                  class="slider-nav__img"
+                  src="./img/forVideo/4.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="slider-nav__item" tabindex="0">
+                <img
+                  class="slider-nav__img"
+                  src="./img/forVideo/5.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="about">
         <div class="container about__container">
           <h1 class="about__title">Обо мне</h1>

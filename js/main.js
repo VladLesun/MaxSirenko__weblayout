@@ -13,7 +13,8 @@ function init() {
     bodyHidden: "is-hidden",
   });
 
-  videoController();
+  videoController(".portfolio__video");
+  videoController(".swiper-slide__video");
   formController();
 }
 

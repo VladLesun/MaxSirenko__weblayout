@@ -81,7 +81,7 @@ export function validation(form) {
     if (elem.dataset.task == "true") {
       if (elem.value == "") {
         removeError(elem);
-        createError(elem, "Введите задачи для видеоролика!");
+        createError(elem, "Введите задачи видеоролика!");
         result = false;
       }
     }
@@ -100,7 +100,7 @@ export function validation(form) {
     if (elem.dataset.budget == "true") {
       if (elem.value == "") {
         removeError(elem);
-        createError(elem, "Введите ваш бюджет для видео!");
+        createError(elem, "Введите ваш бюджет видео!");
         result = false;
       }
     }
@@ -108,7 +108,7 @@ export function validation(form) {
     if (elem.dataset.deadline == "true") {
       if (elem.value == "") {
         removeError(elem);
-        createError(elem, "Введите дату для сдачи видео!");
+        createError(elem, "Введите дату сдачи видео!");
         result = false;
       }
     }

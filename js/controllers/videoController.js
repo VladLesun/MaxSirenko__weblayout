@@ -1,5 +1,5 @@
-export function videoController() {
-  const videos = document.querySelectorAll(".portfolio__video");
+export function videoController(item) {
+  const videos = document.querySelectorAll(item);
 
   for (let video of videos) {
     video.addEventListener("click", () => {
