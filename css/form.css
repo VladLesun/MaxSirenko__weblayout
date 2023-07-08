@@ -17,6 +17,10 @@
   color: red;
 }
 
+.form__validation-box {
+  line-height: 0;
+}
+
 .form__list {
   display: flex;
   flex-direction: column;

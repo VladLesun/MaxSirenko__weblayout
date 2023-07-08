@@ -1,10 +1,13 @@
-const heroSwiper = document.querySelector(".slider-main");
+const heroSlider = document.querySelector(".slider-main");
+const clientSlider = document.querySelector(".client-swiper");
 const sliderNav = document.querySelector(".slider-nav");
 const sliderNavItems = document.querySelectorAll(".slider-nav__item");
+const sliderNavImg = document.querySelectorAll(".slider-nav__img");
 const allVideo = document.querySelectorAll(".swiper-slide__video");
 
-const swiper = new Swiper(heroSwiper, {
+const heroSwiper = new Swiper(heroSlider, {
   slidesPerView: 1,
+  allowTouchMove: false,
 });
 
 sliderNavItems.forEach((el, index) => {
@@ -28,6 +31,50 @@ sliderNavItems.forEach((el, index) => {
       document.querySelector("iframe").remove();
     }
 
-    swiper.slideTo(index);
+    heroSwiper.slideTo(index);
   });
+});
+
+for (let img of sliderNavImg) {
+  img.addEventListener("click", () => {
+    document.getElementById("hero").scrollIntoView({ behavior: "smooth" });
+  });
+}
+
+heroSlider.addEventListener("click", () => {
+  document.getElementById("hero").scrollIntoView({ behavior: "smooth" });
+});
+
+const clientSwiper = new Swiper(clientSlider, {
+  speed: 500,
+  loop: true,
+  autoplay: true,
+  cssEase: "ease",
+  allowTouchMove: false,
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 30,
+    },
+
+    580: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 50,
+    },
+
+    1440: {
+      slidesPerView: 4,
+      spaceBetween: 50,
+    },
+  },
 });

@@ -11,11 +11,35 @@
   margin-bottom: 5px;
 }
 
-.client__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+.client-swiper {
+  width: 100%;
 }
 
-.client__item {
+.client-slide {
+  flex-shrink: 0;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  color: black;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .client {
+    padding-top: 20px;
+  }
+  .client-slide {
+    height: 200px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .client {
+    padding-top: 30px;
+  }
+  .client-slide {
+    height: 300px;
+  }
 }

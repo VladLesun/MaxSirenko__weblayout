@@ -5,7 +5,7 @@ import { videoController } from "./controllers/videoController.js";
 function init() {
   menuController({
     btnClass: "burger",
-    menuClass: "menu",
+    menuClass: "header__menu",
     bodyClass: "body",
     menuLinksClass: "menu__link",
     activeClass: "is-opened",
