@@ -229,14 +229,16 @@
               </li>
               <li class="form__item">
                 <h3 class="form__title">
-                  1.2 Сайт компании интернет-портал или официальная страничка в
-                  соц.сетях.
+                  1.2 Сайт компании, интернет-портал или официальная страничка в
+                  соц.сетях
                 </h3>
-                <input
-                  type="text"
-                  class="form__input"
-                  placeholder="Ваш сайт(интернет-портал, соц.сеть)"
-                />
+                <div class="form__validation-box">
+                  <input
+                    type="text"
+                    class="form__input"
+                    placeholder="Ваш сайт(интернет-портал, соц.сеть)"
+                  />
+                </div>
               </li>
               <li class="form__item">
                 <h3 data-end="*" class="form__title">1.3 Название компании</h3>
@@ -274,7 +276,7 @@
                     data-product="true"
                     type="text"
                     class="form__textarea js-validation"
-                    placeholder="Краткое описание рекламируемого продукта, его суть, свойства, уникальные элементы."
+                    placeholder="Краткое описание рекламируемого продукта, его суть, свойства, уникальные элементы"
                   ></textarea>
                 </div>
               </li>
@@ -285,7 +287,7 @@
                     data-target-group="true"
                     type="text"
                     class="form__textarea js-validation"
-                    placeholder="Пол, возраст, модель поведения аудитории на Вашем сегменте рынка, реакция на Ваш или похожий продукт, другие особенности предполагаемого зрителя или покупателя."
+                    placeholder="Пол, возраст, модель поведения аудитории на Вашем сегменте рынка, реакция на Ваш или похожий продукт, другие особенности предполагаемого зрителя или покупателя"
                   ></textarea>
                 </div>
               </li>
@@ -303,25 +305,29 @@
                     data-task="true"
                     type="text"
                     class="form__textarea js-validation"
-                    placeholder="Привлечение новых клиентов, рассказать о рекламной компании, привлечь сотрудников, создать имидж и т.д."
+                    placeholder="Привлечение новых клиентов, рассказать о рекламной кампании, привлечь сотрудников, создать имидж и т.д."
                   ></textarea>
                 </div>
               </li>
               <li class="form__item">
                 <h3 class="form__title">3.2 Концепт</h3>
-                <textarea
-                  type="text"
-                  class="form__textarea"
-                  placeholder="Описание ролика, концепт (если есть), количество ролика, желаемый хронометраж и любая другая информация, которая поможет лучше понять как вы представляете себе итоговый результат."
-                ></textarea>
+                <div class="form__validation-box">
+                  <textarea
+                    type="text"
+                    class="form__textarea"
+                    placeholder="Описание ролика, концепт, количество роликов, желаемый хронометраж и любая другая информация, которая поможет лучше понять как Вы представляете себе итоговый результат"
+                  ></textarea>
+                </div>
               </li>
               <li class="form__item">
                 <h3 class="form__title">3.3 Референсы</h3>
-                <textarea
-                  type="text"
-                  class="form__textarea"
-                  placeholder="Ссылки на примеры роликов."
-                ></textarea>
+                <div class="form__validation-box">
+                  <textarea
+                    type="text"
+                    class="form__textarea"
+                    placeholder="Ссылки на примеры роликов"
+                  ></textarea>
+                </div>
               </li>
               <li class="form__item">
                 <h3 data-end="*" class="form__title">
@@ -332,8 +338,20 @@
                     data-video-hosting="true"
                     type="text"
                     class="form__textarea js-validation"
-                    placeholder="Диджитал площадки (Youtube, Instagram, TikTok, сайт), внутреннее использования, наружная реклама, либо ТВ."
+                    placeholder="Digital площадки (YouTube, Instagram, TikTok, сайт), внутреннее использование, наружная реклама, ТВ"
                   ></textarea>
+                </div>
+              </li>
+              <li class="form__item">
+                <h3 data-end="*" class="form__title">
+                  3.5 Дедлайн(Желаемые сроки сдачи ролика)
+                </h3>
+                <div class="form__validation-box">
+                  <input
+                    data-deadline="true"
+                    type="date"
+                    class="form__input js-validation"
+                  />
                 </div>
               </li>
             </ul>
@@ -344,34 +362,10 @@
             </h2>
             <ul class="form__list">
               <li class="form__item">
-                <h3 data-end="*" class="form__title">4.1 Бюджет</h3>
-                <div class="form__validation-box">
-                  <input
-                    data-budget="true"
-                    type="text"
-                    class="form__input js-validation"
-                    placeholder="Ваша компания"
-                  />
-                </div>
-              </li>
-              <li class="form__item">
-                <h3 data-end="*" class="form__title">
-                  4.2 Дедлайн(Желаемые сроки сдачи ролика)
-                </h3>
-                <div class="form__validation-box">
-                  <input
-                    data-deadline="true"
-                    type="date"
-                    class="form__input js-validation"
-                  />
-                </div>
-              </li>
-              <li class="form__item">
-                <h3 class="form__title">4.3 Дополнительная информация</h3>
                 <textarea
                   type="text"
                   class="form__textarea"
-                  placeholder="Если осталась еще какая-то информация, которую вы хотели бы нам рассказать, то это поле как раз для этого."
+                  placeholder="Если осталась еще какая-то информация, которую вы хотели бы нам рассказать, то это поле как раз для этого"
                 ></textarea>
               </li>
             </ul>
@@ -384,47 +378,59 @@
 
     <footer class="footer">
       <div class="container footer__container">
-        <div class="footer__wrap">
-          <h2 class="footer__title">Контакты</h2>
-          <div class="footer__contacts">
-            <div class="footer__social">
-              <ul class="footer__social-list">
-                <li class="footer__social-item">
-                  <a href="#!" target="_blank" class="footer__social-link">
-                    Instagram
-                  </a>
-                </li>
-                <li class="footer__item">
-                  <a href="#!" target="_blank" class="footer__social-link">
-                    youtube.com
-                  </a>
-                </li>
-                <li class="footer__social-item">
-                  <a href="#!" target="_blank" class="footer__social-link">
-                    e-mail
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="footer__phone">
-              <ul class="footer__phone-list">
-                <li class="footer__phone-item">
-                  <a href="tel:" class="footer__phone-link">+375213141543</a>
-                </li>
-                <li class="footer__phone-item">
-                  <a href="tel:" class="footer__phone-link">+375213141543</a>
-                </li>
-              </ul>
-            </div>
-          </div>
+        <h2 class="footer__title">Контакты</h2>
+        <div class="footer__contacts">
+          <ul class="footer__social-list">
+            <li class="footer__social-item">
+              <a
+                href="https://www.youtube.com/@freecodecamp"
+                target="_blank"
+                class="footer__social-link social_youtube"
+              >
+                youtube.com
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a
+                href="https://www.instagram.com/vladlesun"
+                target="_blank"
+                class="footer__social-link social_instagram"
+              >
+                Instagram
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a
+                href="https://vimeo.com/maxsirenko"
+                target="_blank"
+                class="footer__social-link social_vimeo"
+              >
+                Vimeo
+              </a>
+            </li>
+          </ul>
+          <ul class="footer__phone-list">
+            <li class="footer__phone-item">
+              <a href="tel:" class="footer__phone-link">+375213141543</a>
+            </li>
+            <li class="footer__phone-item">
+              <a href="tel:" class="footer__phone-link">+375213141543</a>
+            </li>
+          </ul>
         </div>
 
         <div class="footer__logo">
-          <img
-            src="./img/footerLogo.png"
-            alt="Max Sirenko"
-            class="footer__logo-img"
-          />
+          <a
+            href="https://www.instagram.com/maxsirenko"
+            target="_blank"
+            class="footer__logo-link"
+          >
+            <img
+              src="./img/footerLogo.png"
+              alt="Max Sirenko"
+              class="footer__logo-img"
+            />
+          </a>
         </div>
       </div>
     </footer>

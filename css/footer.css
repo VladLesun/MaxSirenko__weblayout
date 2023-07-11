@@ -7,6 +7,7 @@
 .footer__title {
   font-weight: 800;
   font-size: 24px;
+  margin-bottom: 10px;
 }
 
 .footer__contacts {
@@ -97,6 +98,8 @@
 }
 
 .footer__phone-link {
+  width: max-content;
+  margin-left: auto;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -142,13 +145,14 @@
     width: 100%;
     flex-direction: row;
     margin: 0;
-    gap: 40px;
+    gap: 10%;
   }
   .footer__phone-item:nth-child(1n) > .footer__phone-link {
-    justify-content: flex-end;
+    margin-left: auto;
   }
   .footer__phone-item:nth-child(2n) > .footer__phone-link {
-    justify-content: flex-start;
+    margin: 0;
+    margin-right: auto;
   }
   .footer__phone-link {
     justify-content: center;
@@ -170,5 +174,47 @@
   .footer__phone-link {
     justify-content: center;
     font-size: 30px;
+  }
+  .footer__social-link:hover.social_youtube {
+    border-color: transparent;
+    background-color: #ff3000;
+  }
+
+  .footer__social-link:hover.social_instagram {
+    border-color: transparent;
+    background: #f09433;
+    background: -moz-linear-gradient(
+      45deg,
+      #f09433 0%,
+      #e6683c 25%,
+      #dc2743 50%,
+      #cc2366 75%,
+      #bc1888 100%
+    );
+    background: -webkit-linear-gradient(
+      45deg,
+      #f09433 0%,
+      #e6683c 25%,
+      #dc2743 50%,
+      #cc2366 75%,
+      #bc1888 100%
+    );
+    background: linear-gradient(
+      45deg,
+      #f09433 0%,
+      #e6683c 25%,
+      #dc2743 50%,
+      #cc2366 75%,
+      #bc1888 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  }
+
+  .footer__social-link:hover.social_vimeo {
+    border-color: transparent;
+    background-color: #32b8e8;
+  }
+  .footer__phone-link:hover {
+    color: #00d95f;
   }
 }

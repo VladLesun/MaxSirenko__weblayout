@@ -38,6 +38,12 @@
   border: 1px solid black;
   color: black;
   background-color: transparent;
+  transition: color 0.5s ease, background-color 0.5s ease;
+}
+
+.about__link:active {
+  color: white;
+  background-color: black;
 }
 
 @media (min-width: 580px) {
@@ -95,6 +101,10 @@
   .about__link {
     font-size: 30px;
     padding: 30px;
+  }
+  .about__link:hover {
+    color: white;
+    background-color: black;
   }
 }
 

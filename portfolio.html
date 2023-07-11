@@ -192,7 +192,7 @@
       <section class="portfolio">
         <div class="container portfolio__container">
           <h1 class="portfolio__title title-hidden">Мое портфолио</h1>
-          <div class="portfolio__wrap">
+          <div class="portfolio__wrap portfolio__wrap-first">
             <h2 class="portfolio__wrap-title">2023</h2>
             <ul class="portfolio__list">
               <li class="portfolio__item">
@@ -219,11 +219,10 @@
               <li class="portfolio__item">
                 <div class="portfolio__video" data-video=""></div>
               </li>
-
             </ul>
           </div>
           <div class="portfolio__wrap">
-            <h2 class="portfolio__title">2022</h2>
+            <h2 class="portfolio__wrap-title">2022</h2>
             <ul class="portfolio__list">
               <li class="portfolio__item">
                 <div class="portfolio__video" data-video=""></div>
@@ -243,7 +242,7 @@
             </ul>
           </div>
           <div class="portfolio__wrap">
-            <h2 class="portfolio__title">2021</h2>
+            <h2 class="portfolio__wrap-title">2021</h2>
             <ul class="portfolio__list">
               <li class="portfolio__item">
                 <div class="portfolio__video" data-video=""></div>
@@ -268,47 +267,59 @@
 
     <footer class="footer">
       <div class="container footer__container">
-        <div class="footer__wrap">
-          <h2 class="footer__title">Контакты</h2>
-          <div class="footer__contacts">
-            <div class="footer__social">
-              <ul class="footer__social-list">
-                <li class="footer__social-item">
-                  <a href="#!" target="_blank" class="footer__social-link">
-                    Instagram
-                  </a>
-                </li>
-                <li class="footer__item">
-                  <a href="#!" target="_blank" class="footer__social-link">
-                    youtube.com
-                  </a>
-                </li>
-                <li class="footer__social-item">
-                  <a href="#!" target="_blank" class="footer__social-link">
-                    e-mail
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="footer__phone">
-              <ul class="footer__phone-list">
-                <li class="footer__phone-item">
-                  <a href="tel:" class="footer__phone-link">+375213141543</a>
-                </li>
-                <li class="footer__phone-item">
-                  <a href="tel:" class="footer__phone-link">+375213141543</a>
-                </li>
-              </ul>
-            </div>
-          </div>
+        <h2 class="footer__title">Контакты</h2>
+        <div class="footer__contacts">
+          <ul class="footer__social-list">
+            <li class="footer__social-item">
+              <a
+                href="https://www.youtube.com/@freecodecamp"
+                target="_blank"
+                class="footer__social-link social_youtube"
+              >
+                youtube.com
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a
+                href="https://www.instagram.com/vladlesun"
+                target="_blank"
+                class="footer__social-link social_instagram"
+              >
+                Instagram
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a
+                href="https://vimeo.com/maxsirenko"
+                target="_blank"
+                class="footer__social-link social_vimeo"
+              >
+                Vimeo
+              </a>
+            </li>
+          </ul>
+          <ul class="footer__phone-list">
+            <li class="footer__phone-item">
+              <a href="tel:" class="footer__phone-link">+375213141543</a>
+            </li>
+            <li class="footer__phone-item">
+              <a href="tel:" class="footer__phone-link">+375213141543</a>
+            </li>
+          </ul>
         </div>
 
         <div class="footer__logo">
-          <img
-            src="./img/footerLogo.png"
-            alt="Max Sirenko"
-            class="footer__logo-img"
-          />
+          <a
+            href="https://www.instagram.com/maxsirenko"
+            target="_blank"
+            class="footer__logo-link"
+          >
+            <img
+              src="./img/footerLogo.png"
+              alt="Max Sirenko"
+              class="footer__logo-img"
+            />
+          </a>
         </div>
       </div>
     </footer>
