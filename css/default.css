@@ -69,6 +69,10 @@ fieldset {
   padding: 0 15px;
 }
 
+.is-hidden {
+  overflow: hidden;
+}
+
 .footer {
   padding-top: 15px;
 }

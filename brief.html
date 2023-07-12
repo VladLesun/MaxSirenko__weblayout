@@ -59,7 +59,7 @@
     <script type="module" src="./js/main.js" defer></script>
   </head>
   <body class="body">
-    <header class="header">
+    <header class="header" id="header">
       <div class="container header__container">
         <a href="index.html" class="header__logo">
           <img
@@ -365,7 +365,7 @@
                 <textarea
                   type="text"
                   class="form__textarea"
-                  placeholder="Если осталась еще какая-то информация, которую вы хотели бы нам рассказать, то это поле как раз для этого"
+                  placeholder="Любая информация, которая может помочь нам детальнее понять Ваши цели и задачи"
                 ></textarea>
               </li>
             </ul>
@@ -436,9 +436,33 @@
     </footer>
 
     <div class="modal">
-      <div class="modal__container">
-        <button class="modal__btn">Х</button>
-        <p class="modal__text">Форма отправлена успешно</p>
+      <div class="modal__overlay">
+        <div class="modal__container">
+          <img
+            class="modal__img"
+            src="./img/done.png"
+            alt="Форма отправлена успешно"
+          />
+          <h2 class="modal__title">Успешно !</h2>
+          <p class="modal__text">С Вами свяжутся в ближайшее время</p>
+          <button class="modal__btn">
+            <svg
+              class="modal__svg"
+              width="29"
+              height="29"
+              viewBox="0 0 29 29"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M22.2332 7.73333L21.2665 6.76666L14.4998 13.5334L7.73318 6.7667L6.76652 7.73336L13.5332 14.5L6.76654 21.2667L7.73321 22.2333L14.4998 15.4667L21.2665 22.2334L22.2332 21.2667L15.4665 14.5L22.2332 7.73333Z"
+                fill="currentColor"
+              />
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
   </body>

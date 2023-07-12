@@ -1,0 +1,145 @@
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  overflow-y: auto;
+  z-index: 15;
+}
+
+.modal_open {
+  display: flex;
+}
+
+.modal__overlay {
+  position: relative;
+  width: 94%;
+  min-width: 290px;
+  min-height: 215px;
+  cursor: default;
+  background-color: #fff;
+  margin: auto;
+  color: var(--main-color);
+  padding: 25px 15px;
+}
+
+.modal__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  color: black;
+}
+
+.modal__img {
+  width: 50px;
+  height: 50px;
+}
+
+.modal__title {
+  position: relative;
+  text-align: center;
+  font-size: 24px;
+}
+
+.modal__title::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+}
+
+.modal__text {
+  text-align: center;
+  font-size: 18px;
+}
+
+.modal__btn {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  color: black;
+  top: 5px;
+  right: 5px;
+}
+
+.modal__svg {
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 580px) {
+  .modal__overlay {
+    width: 100%;
+    max-width: 450px;
+  }
+}
+
+@media (min-width: 768px) {
+  .modal__overlay {
+    max-width: 550px;
+  }
+  .modal__title {
+    font-size: 35px;
+  }
+  .modal__text {
+    font-size: 20px;
+  }
+  .modal__btn {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .modal__overlay {
+    max-width: 550px;
+    min-height: 400px;
+  }
+  .modal__container {
+    gap: 25px;
+  }
+  .modal__img {
+    margin-top: 40px;
+    width: 100px;
+    height: 100px;
+  }
+  .modal__title {
+    font-size: 45px;
+  }
+  .modal__text {
+    font-size: 25px;
+  }
+  .modal__btn {
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .modal__overlay {
+    max-width: 650px;
+  }
+  .modal__img {
+    margin-top: 30px;
+    width: 120px;
+    height: 120px;
+  }
+  .modal__title {
+    font-size: 45px;
+  }
+  .modal__text {
+    font-size: 30px;
+  }
+  .modal__btn {
+    width: 50px;
+    height: 50px;
+  }
+}
